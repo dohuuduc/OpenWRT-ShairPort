@@ -34,7 +34,8 @@ endef
 
 define Package/shairport
   $(Package/shairport/Default)
-  DEPENDS:= +libpthread +libopenssl +alsa-lib +libavahi-client +avahi-utils +libao
+#  DEPENDS:= +libpthread +libopenssl +alsa-lib +libavahi-client +avahi-utils +libao
+   DEPENDS:= +libpthread +alsa-lib +libavahi-client
 endef
 
 define Package/shairport/description
