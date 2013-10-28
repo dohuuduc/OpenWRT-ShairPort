@@ -8,8 +8,8 @@
 
 include $(TOPDIR)/rules.mk
 
-PKG_NAME:=shairport
-PKG_VERSION:=0.07
+PKG_NAME:=shairport_new
+PKG_VERSION:=0.08
 PKG_RELEASE:=$(PKG_SOURCE_VERSION)
 
 PKG_SOURCE_PROTO:=git
@@ -24,27 +24,27 @@ PKG_BUILD_PARALLEL:=1
 include $(INCLUDE_DIR)/package.mk
 
 
-define Package/shairport/Default
+define Package/shairport_new/Default
   SECTION:=sound
   CATEGORY:=Sound
-  TITLE:=ShairPort
+  TITLE:=ShairPort_new
   URL:=http://mafipulation.org/
 endef
 
 
-define Package/shairport
-  $(Package/shairport/Default)
+define Package/shairport_new
+  $(Package/shairport_new/Default)
 #  DEPENDS:= +libpthread +libopenssl +alsa-lib +libavahi-client +avahi-utils +libao
    DEPENDS:= +libpthread +alsa-lib +libavahi-client
 endef
 
-define Package/shairport/description
+define Package/shairport_new/description
   ShairPort is server software that implements the RAOP protocol for
   playback of music streamed from a compatible remote client.
 endef
 
 
-define Package/shairport/install
+define Package/shairport_new/install
 	$(INSTALL_DIR) $(1)/usr/bin
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/shairport $(1)/usr/bin/
 	$(INSTALL_DIR) $(1)/etc/init.d
@@ -56,4 +56,4 @@ define Package/shairport/install
 endef
 
 
-$(eval $(call BuildPackage,shairport))
+$(eval $(call BuildPackage,shairport_new))
