@@ -35,7 +35,7 @@ endef
 define Package/shairport_new
   $(Package/shairport_new/Default)
 #  DEPENDS:= +libpthread +libopenssl +alsa-lib +libavahi-client +avahi-utils +libao
-   DEPENDS:= +libpthread +alsa-lib +libavahi-client
+   DEPENDS:= +libpthread +libopenssl +alsa-lib +libavahi-client
 endef
 
 define Package/shairport_new/description
