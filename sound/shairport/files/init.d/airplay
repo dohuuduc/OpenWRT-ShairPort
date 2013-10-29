@@ -15,7 +15,7 @@ handle_airplay() {
         local ctl
         local volume
 		
-	config_get bname "$1" bname "AirPort"
+	config_get bname "$1" bname "wairplay"
 	config_get initbuf "$1" initbuf "220"
 	config_get port "$1" port "5002"
 	config_get password "$1" password
@@ -24,7 +24,7 @@ handle_airplay() {
         config_get ctl "$1" ctl "default"
         config_get volume "$1" volume "Speaker"
 	
-	shairport -n "$bname" -s $initbuf -p $port -d
+	shairport -a "$bname" -b $initbuf -p $port -d
 		
 }
 
