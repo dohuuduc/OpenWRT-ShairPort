@@ -1,7 +1,7 @@
 This is a Git Branch for building ShairPort from GIT feed on OpenWrt
 Updated by Quentin Smart from Mike Juni
 
-Uses the latest https://github.com/abrasive/shairport version against a TPLINK WR 703N on openWRT, works well on attitude adjustment
+Uses the latest https://github.com/abrasive/shairport version against a TPLINK WR703N on openWRT, works well on attitude adjustment
 
 1. Add "src-git qs git://github.com/sm3rt/OpenWRT-ShairPort.git;master" to feeds.conf
 2. scripts/feeds update -a
