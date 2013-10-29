@@ -1,5 +1,5 @@
 This is a Git Branch for building ShairPort from GIT feed on OpenWrt
-Updated by Quentin Smart 
+Updated by Quentin Smart from Mike Juni
 
 Uses the latest https://github.com/abrasive/shairport version against a 703N on openWRT, works well on attitude adjustment
 
